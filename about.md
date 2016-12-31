@@ -1,15 +1,10 @@
 ---
-layout: page
+layout: default
 title: About
 permalink: /about/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](http://jekyllrb.com/)
 
-You can find the source code for the Jekyll new theme at:
-{% include icon-github.html username="jekyll" %} /
-[minima](https://github.com/jekyll/minima)
+Paycrave is an app that was designed by Erin Johnson for the UX/UI course at [Bloc.io](http://bloc.io). This website created as a marketing site for the app and was built using html and css and customized in Jekyll for the Front End portion of the course.
 
-You can find the source code for Jekyll at
-{% include icon-github.html username="jekyll" %} /
-[jekyll](https://github.com/jekyll/jekyll)
+![About](https://storage.googleapis.com/paycrave/header_phone.png)

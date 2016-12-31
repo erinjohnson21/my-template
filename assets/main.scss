@@ -1,39 +1,265 @@
 ---
-# Only the main Sass file needs front matter (the dashes are enough)
 ---
-@charset "utf-8";
 
-// Our variables
-$base-font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-$base-font-size:   16px;
-$base-font-weight: 400;
-$small-font-size:  $base-font-size * 0.875;
-$base-line-height: 1.5;
+body, html {
+  overflow-x:hidden;
+}
+body {
+  font-family: "Lato", Helvetica, Arial, sans-serif;
+  color:#333333;
+}
+h1,
+h2,
+h3,
+h4,
+p {
+  font-family: 'Lato', sans-serif;
+}
 
-$spacing-unit:     30px;
+.container {
+  width: 90%;
+}
 
-$text-color:       #111;
-$background-color: #fdfdfd;
-$brand-color:      #2a7ae2;
+.nav {
+  display: flex;
+  background-color: #b6372a;
+  padding-top: 20px;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
 
-$grey-color:       #828282;
-$grey-color-light: lighten($grey-color, 40%);
-$grey-color-dark:  darken($grey-color, 25%);
+.nav .logo {
+  margin-left: 50px;
+  flex: 1;
+}
 
-// Width of the content area
-$content-width:    800px;
+#menu {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+}
 
-$on-palm:          600px;
-$on-laptop:        800px;
+#menu li {
+  list-style: none;
+  padding-right: 30px;
+}
 
-// Minima also includes a mixin for defining media queries.
-// Use media queries like this:
-// @include media-query($on-palm) {
-//     .wrapper {
-//         padding-right: $spacing-unit / 2;
-//         padding-left: $spacing-unit / 2;
-//     }
-// }
+#menu a {
+  text-decoration: none;
+  color: white;
+  text-align: right;
+}
 
-// Import partials from the `minima` theme.
-@import "minima";
+.hero {
+  background-image: url(https://storage.googleapis.com/paycrave/header.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  padding-top: 50px;
+  height: auto;
+  padding-bottom: 20px;
+}
+
+.hero .phone-top {
+  width: 100%;
+  height: auto;
+}
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+}
+
+.app-view img {
+  width: auto;
+  flex: 1;
+}
+
+.text-section {
+  flex: 1;
+}
+
+.text-section h1 {
+  font-size: 55px;
+  color: white;
+  text-transform: uppercase;
+  line-height: 70px;
+}
+
+.text-section p {
+  font-size: 18px;
+  font-weight: 100;
+  color: white;
+  line-height: 30px;
+}
+
+#features {
+  background-color: #f0f0f0;
+  padding-bottom: 50px;
+  padding-top: 20px;
+}
+
+#features h2 {
+  text-align: center;
+  font-size: 30px;
+  padding-top: 50px;
+  color: #b6372a;
+  text-transform: uppercase;
+}
+
+.feature-section {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+.col {
+  text-align: center;
+  max-width: 300px;
+}
+
+.col img {
+  max-width: 50px;
+  margin: auto;
+}
+
+.col h4 {
+  text-transform: uppercase;
+  font-size: 18px;
+}
+
+.col p {
+  font-size: 14px;
+  line-height: 22px;
+}
+#reviews {
+  display: flex;
+  background-color: #b6372a;
+  flex-wrap: wrap;
+  padding: 30px 0 30px 0;
+  height: auto;
+}
+.review {
+  text-align: center;
+  max-width: 400px;
+  padding: 40px;
+}
+.review p {
+  color: white;
+  line-height: 25px;
+  font-size: 16px;
+}
+#right-phone {
+  display: flex;
+  float: right;
+  margin-top: -60px;
+}
+.phone-bottom {
+  z-index: 999;
+  padding-right: 5px;
+}
+#contact {
+  flex-direction: column;
+  width: 70%;
+  margin: auto;
+  text-align: center;
+}
+#contact h2 {
+  font-size: 30px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #b6372a;
+  padding-bottom: 30px;
+}
+#contact p {
+  font-size: 24px;
+  text-transform: uppercase;
+  color: #b6372a;
+  padding-top: 30px;
+}
+footer {
+  display: flex;
+  text-align: center;
+  height: auto;
+  background-color: #b6372a;
+  color: white;
+  margin: auto;
+}
+.footer-content {
+  width: 80%;
+  display: flex;
+  padding: 10px;
+  margin: auto;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.footer-content p {
+  font-size: 20px;
+}
+.footer-content .icons {
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+.footer-content .icons a {
+  color: white;
+  padding-right: 20px;
+
+}
+.footer-content .icons i {
+  font-size: 40px;
+}
+.footer-content .logo {
+  /*margin-right: auto;*/
+  padding-top: 10px;
+}
+@media (min-width: 375px) {
+  .hero .phone-top {
+    padding-right: 50px;
+  }
+  #menu li {
+    padding-bottom: 10px;
+  }
+  .phone-bottom {
+    display: none;
+  }
+}
+@media (min-width: 750px) {
+  #phone-top {
+    padding-right: 40px;
+  }
+  .review {
+    text-align: center;
+    max-width: 300px;
+    padding: 40px;
+  }
+}
+@media (min-width: 1200px) {
+  .content {
+    max-width: 60%;
+  }
+  .review {
+    text-align: center;
+    max-width: 400px;
+    padding: 40px;
+  }
+  #right-phone {
+    display: flex;
+    float: right;
+    margin-top: -275px;
+    padding-right: 40px;
+  }
+  .phone-bottom {
+    z-index: 999;
+    padding-right: 5px;
+    display: flex;
+  }
+  #contact h2 {
+    font-size: 40px;
+    text-transform: uppercase;
+    text-align: center;
+    color: #b6372a;
+    padding-bottom: 30px;
+  }
+
+}

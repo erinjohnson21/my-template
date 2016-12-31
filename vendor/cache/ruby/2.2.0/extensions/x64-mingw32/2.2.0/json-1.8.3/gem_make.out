@@ -1,0 +1,9 @@
+C:/ruby/Ruby22-x64/bin/ruby.exe -r ./siteconf20161228-3092-1vgtsii.rb extconf.rb
+creating Makefile
+
+make "DESTDIR=" clean
+
+make "DESTDIR="
+make: Nothing to be done for `all'.
+
+make "DESTDIR=" install
